@@ -14,6 +14,13 @@ body{
 .navbar{
   background: rgba(204, 204, 204, 1);
 }
+.navbar-toggle{
+  background: rgba(238, 238, 238, 1);
+}
 section{
   min-height: 100vh;
+}
+.jumbotron{
+  background: #222;
+  color: #eee;
 }
