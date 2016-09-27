@@ -1,5 +1,5 @@
 /*
-Theme Name: Portfolio 
+Theme Name: Portfolio
 Author: Kristian Jeppe Schou Guld
 Author URI: www.kguld.com
 Description: Theme used originaly on kguld.com
@@ -7,3 +7,13 @@ Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+body{
+  background: rgba(238, 238, 238, 1);
+}
+.navbar{
+  background: rgba(204, 204, 204, 1);
+}
+section{
+  min-height: 100vh;
+}

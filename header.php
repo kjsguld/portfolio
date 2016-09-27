@@ -7,7 +7,14 @@
       <?php wp_head(); ?>
     </head>
     <body>
-      <!-- google analytics !!!!! -->
-      <nav>
 
+      <nav class="navbar navbar-fixed-top">
+        <?php
+        wp_nav_menu([
+					'theme_location' => 'main-nav',
+					'menu_class' => 'nav navbar-nav'
+				]);
+
+
+        ?>
       </nav>
