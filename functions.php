@@ -1,7 +1,7 @@
 <?php
-register_nav_menus(array(
-    'header_menu' => 'Header menu'
-));
+// register_nav_menus(array(
+//     'header_menu' => 'main-nav'
+// ));
 
 //removeing admin header
 add_filter('show_admin_bar', '__return_false');
