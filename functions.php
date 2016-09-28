@@ -83,6 +83,16 @@ function set_scripts(){
   );
   wp_enqueue_script('bootstrap-js');
 
+  // typed.js
+  wp_register_script(
+    'typed',
+    get_template_directory_uri() . '/typed.js',
+    [jquery],
+    null,
+    true
+  );
+  wp_enqueue_script('typed');
+
   // App core
   wp_register_script(
     'core',

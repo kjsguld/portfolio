@@ -22,6 +22,7 @@ $query = new WP_Query([
               <h1><?php the_title(); ?></h1>
             </header>
             <?php the_content(); ?>
+            <div id="typed"></div>
           </section>
         </div>
       </div>
