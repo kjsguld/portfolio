@@ -33,7 +33,20 @@ $query = new WP_Query([
       </div>
       <?php
       break;
-
+      // end jumbotron
+      case 'skill':
+      ?>
+      <div class="container">
+        <section id='page-<?php the_ID(); ?>' class="<?php echo $sectionType; ?>">
+          <header>
+            <h1><?php the_title(); ?></h1>
+          </header>
+          <?php the_content(); ?>
+        </section>
+      </div>
+      <?php
+      break;
+      //end skill
       default:
         ?>
         <div class="container">

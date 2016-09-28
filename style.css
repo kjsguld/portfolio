@@ -35,6 +35,9 @@ body{
 .jumbotron section{
   min-height: 1px;
 }
+.jumbotron span{
+  font-size: 21px;
+}
 .jumbotron .container section div.col-md-6:last-child{
   display: flex;
 }
