@@ -7,25 +7,49 @@ Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-
+/* --- general --- */
 body{
-  background: rgba(238, 238, 238, 1);
+  background: #e9e9ec;
+  font-family: open-sans, helvetica, sans-serif;
 }
+/* --- navbar --- */
 .navbar{
   background: rgba(204, 204, 204, 1);
 }
 .navbar-toggle{
   background: rgba(238, 238, 238, 1);
 }
-section{
-  min-height: 100vh;
+.navbar .navbar-toggle .icon-bar{
+  background-color: #222;
+}
+/* --- content --- */
+.container section{
+  min-height: 80vh;
 }
 .jumbotron{
   background: #222;
   color: #eee;
+  padding-top: 15vh;
+  padding-bottom: 0;
+}
+.jumbotron section{
+  min-height: 1px;
+}
+.jumbotron .container section div.col-md-6:last-child{
+  display: flex;
+}
+.jumbotron .container section div.col-md-6,
+.jumbotron .container section div.col-md-6 img{
+  align-content: flex-end;
 }
 
-/* typed.js begins */
+/* --- footer --- */
+footer{
+  background: rgba(204, 204, 204, 1);
+  padding: 3em 0 2em 0;
+}
+
+/* --- typed.js --- */
 #typed{
   display: inline;
 }
@@ -33,12 +57,12 @@ section{
 /* code for animated blinking cursor */
 .typed-cursor{
     opacity: 1;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    -o-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    font-weight: 500;
+    -webkit-animation: blink 0.8s infinite;
+    -moz-animation: blink 0.8s infinite;
+    -ms-animation: blink 0.8s infinite;
+    -o-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
 }
 @-keyframes blink{
     0% { opacity:1; }
@@ -64,4 +88,22 @@ section{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+/* --- Media queries --- */
+/* Smallest devices (below 768px / standard) */
+@media(max-width:767px){
+
+}
+/* Small devices (tablets, 768px and up) */
+@media(min-width:768px){
+
+}
+/* Medium devices (desktops, 992px and up) */
+@media(min-width:992px){
+
+}
+/* Large devices (large desktops, 1200px and up) */
+@media(min-width:1200px){
+
 }

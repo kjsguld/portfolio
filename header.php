@@ -26,7 +26,7 @@ $query = new WP_Query([
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="headerNav">
+        <div class="collapse navbar-collapse navbar-right" id="headerNav">
           <ul class="nav navbar-nav">
             <?php while ($query->have_posts()): $query->the_post();  ?>
               <li>
