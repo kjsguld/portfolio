@@ -8,7 +8,7 @@ $subQuery = new WP_Query([
 ?>
 <div class="container">
   <section id='page-<?php the_ID(); ?>' class="<?php echo $sectionType; ?>">
-    <div class="col-md-4 col-md-offset-3 text-center">
+    <div class="col-md-6 col-md-offset-3 text-center">
       <header>
         <h1><?php the_title(); ?></h1>
       </header>

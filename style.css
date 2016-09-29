@@ -14,7 +14,11 @@ body{
 }
 /* --- navbar --- */
 .navbar{
-  background: rgba(204, 204, 204, 1);
+  background: -webkit-linear-gradient(rgba(204, 204, 204, 1), #eee);
+  background: -o-linear-gradient(rgba(204, 204, 204, 1), #eee);
+  background: -moz-linear-gradient(rgba(204, 204, 204, 1), #eee);
+  background: linear-gradient(rgba(204, 204, 204, 1), #eee);
+
 }
 .navbar-toggle{
   background: rgba(238, 238, 238, 1);
@@ -22,12 +26,26 @@ body{
 .navbar .navbar-toggle .icon-bar{
   background-color: #222;
 }
+.nav>li>a{
+  font-weight: 700;
+  color: #333;
+}
+.nav>li>a:hover{
+  background: -webkit-linear-gradient(#ddd, #fff);
+  background: -o-linear-gradient(#ddd, #fff);
+  background: -moz-linear-gradient(#ddd, #fff);
+  background: linear-gradient(#ddd, #fff);
+  color: #555;
+}
 /* --- content --- */
 .container section{
   min-height: 80vh;
 }
 .jumbotron{
-  background: #222;
+  background: -webkit-linear-gradient(#333, #000);
+  background: -o-linear-gradient(#333, #000);
+  background: -moz-linear-gradient(#333, #000);
+  background: linear-gradient(#333, #000);
   color: #eee;
   padding-top: 15vh;
   padding-bottom: 0;
@@ -51,8 +69,18 @@ body{
 
 /* --- footer --- */
 footer{
-  background: rgba(204, 204, 204, 1);
+  background: -webkit-linear-gradient(#ccc, #aaa);
+  background: -o-linear-gradient(#ccc, #aaa);
+  background: -moz-linear-gradient(#ccc, #aaa);
+  background: linear-gradient(#ccc, #aaa);
   padding: 3em 0 2em 0;
+}
+footer,
+footer a{
+  color: #fff;
+}
+footer a:hover{
+  color: #ccc;
 }
 
 /* --- typed.js --- */
@@ -116,5 +144,16 @@ footer{
 }
 /* Large devices (large desktops, 1200px and up) */
 @media(min-width:1200px){
-
+  body{
+    background: #666;
+  }
+  .jumbotron{
+    margin-bottom: 0;
+  }
+  #site-wrapper>.container{
+    background: #e9e9ec;
+  }
+  #site-wrapper>.container:first-of-type{
+    margin-top: 10em;
+  }
 }
