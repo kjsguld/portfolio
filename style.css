@@ -27,7 +27,6 @@ h6{
   background: -o-linear-gradient(rgba(204, 204, 204, 1), #eee);
   background: -moz-linear-gradient(rgba(204, 204, 204, 1), #eee);
   background: linear-gradient(rgba(204, 204, 204, 1), #eee);
-
 }
 .navbar-toggle{
   background: rgba(238, 238, 238, 1);
@@ -88,6 +87,38 @@ section.reference .img-responsive:hover{
   color: #444;
   text-decoration: none;
 }
+/* --- single.php ---*/
+body.single section{
+  padding: 6em 0 0 0;
+}
+body.single .tags-box header{
+  background: -webkit-linear-gradient(#ccc, #aaa);
+  background: -o-linear-gradient(#ccc, #aaa);
+  background: -moz-linear-gradient(#ccc, #aaa);
+  background: linear-gradient(#ccc, #aaa);
+}
+body.single .tags-box h2{
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0.7em 0.8em;
+  margin: 0;
+}
+body.single .tags-box{
+
+}
+body.single .tags-box .tags-list{
+  background-color: #ccc;
+  list-style: none;
+  padding: 0.5em;
+}
+body.single .single-secondary{
+  margin-top: 25px;
+}
+/* --- 404.php ---*/
+body.error404 section{
+  padding: 6em 0 0 0;
+}
+
 
 /* --- footer --- */
 footer{
