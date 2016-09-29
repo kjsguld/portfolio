@@ -31,13 +31,13 @@ function set_styles(){
   wp_enqueue_style('font-awesome');
 
   wp_register_style(
-    'open-sans',
-    'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+    'googleFonts',
+    'https://fonts.googleapis.com/css?family=Open+Sans|Roboto',
     [],
     null,
     'all'
   );
-  wp_enqueue_style('open-sans');
+  wp_enqueue_style('googleFonts');
 
   // Base style
   wp_register_style(

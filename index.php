@@ -1,4 +1,3 @@
-<?php get_header(); ?>
 <?php
 // Get pages for single page layout
 $query = new WP_Query([
@@ -7,11 +6,12 @@ $query = new WP_Query([
   'order' => 'ASC'
 ]);
 ?>
+<?php get_header(); ?>
 <div id="site-wrapper">
   <?php
   while ($query->have_posts()) : $query->the_post();
-  $sectionType =  get_post_meta(get_the_ID(), 'class', true);
-  switch ($sectionType) {
+  $GLOBALS['sectionType'] =  get_post_meta(get_the_ID(), 'class', true);
+  switch ($GLOBALS['sectionType']) {
     case 'jumbotron':
     get_template_part('template-parts/content', 'jumbotron');
     break;

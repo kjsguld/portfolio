@@ -7,16 +7,15 @@ $subQuery = new WP_Query([
 ]);
 ?>
 <div class="container">
-  <section id='page-<?php the_ID(); ?>' class="<?php echo $sectionType; ?>">
+  <section id='page-<?php the_ID(); ?>' class="<?php echo $GLOBALS['sectionType']; ?> row">
     <div class="col-md-6 col-md-offset-3 text-center">
       <header>
         <h1><?php the_title(); ?></h1>
       </header>
       <?php the_content(); ?>
     </div>
-    <div class="clearfix"></div>
     <?php while ($subQuery->have_posts()) : $subQuery->the_post(); ?>
-      <article class="skill-article col-md-4">
+      <article class="skill-article col-md-4 col-sm-6">
         <div>
           <h2 class="text-center"><?php the_title(); ?><h2>
         </div>
