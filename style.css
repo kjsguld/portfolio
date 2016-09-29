@@ -46,6 +46,9 @@ body{
   align-content: flex-end;
 }
 
+/* --- skill --- */
+
+
 /* --- footer --- */
 footer{
   background: rgba(204, 204, 204, 1);
@@ -100,7 +103,12 @@ footer{
 }
 /* Small devices (tablets, 768px and up) */
 @media(min-width:768px){
+  article.skill-article div,
+  {
+    width: 90%;
+    margin: 0 auto;
 
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media(min-width:992px){

@@ -14,39 +14,16 @@ $query = new WP_Query([
     $sectionType =  get_post_meta(get_the_ID(), 'class', true);
     switch ($sectionType) {
       case 'jumbotron':
-      ?>
-      <div class="jumbotron">
-        <div class="container">
-          <section id='page-<?php the_ID(); ?>'>
-            <div class="col-md-6">
-              <header>
-                <h1><?php the_title(); ?></h1>
-              </header>
-              <?php the_content(); ?>
-              <div><p id="typed"></p></div>
-            </div>
-            <div class="col-md-6">
-              <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
-            </div>
-          </section>
-        </div>
-      </div>
-      <?php
+      get_template_part('template-parts/content', 'jumbotron');
       break;
       // end jumbotron
-      case 'skill':
-      ?>
-      <div class="container">
-        <section id='page-<?php the_ID(); ?>' class="<?php echo $sectionType; ?>">
-          <header>
-            <h1><?php the_title(); ?></h1>
-          </header>
-          <?php the_content(); ?>
-        </section>
-      </div>
-      <?php
+      case 'skills':
+      get_template_part('template-parts/content', 'skills');
       break;
-      //end skill
+      //end skills
+      case 'reference':
+      get_template_part('template-parts/content', 'reference');
+      break;
       default:
         ?>
         <div class="container">

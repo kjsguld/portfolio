@@ -87,7 +87,7 @@ function set_scripts(){
   // typed.js
   wp_register_script(
     'typed',
-    get_template_directory_uri() . 'vendor/typed/typed.js',
+    get_template_directory_uri() . '/vendor/typed/typed.js',
     [jquery],
     null,
     true
