@@ -32,7 +32,7 @@ function set_styles(){
 
   wp_register_style(
     'googleFonts',
-    'https://fonts.googleapis.com/css?family=Open+Sans|Roboto',
+    'https://fonts.googleapis.com/css?family=Open+Sans%7CRoboto',
     [],
     null,
     'all'

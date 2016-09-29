@@ -17,7 +17,7 @@ $subQuery = new WP_Query([
     <?php while ($subQuery->have_posts()) : $subQuery->the_post(); ?>
       <article class="skill-article col-sm-6">
         <div>
-          <h2 class="text-center"><?php the_title(); ?><h2>
+          <h2 class="text-center"><?php the_title(); ?></h2>
         </div>
         <div>
           <?php the_content(); ?>

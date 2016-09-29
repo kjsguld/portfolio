@@ -25,7 +25,7 @@
           <?php the_author(); ?> &copy; <?php echo (date()<2015) ? '2015 - '.date('Y') : date('Y') ; ?>
         </p>
       </div>
-    <div class="container">
+    </div>
   </footer>
   <!-- footer end -->
   <?php wp_footer();?>

@@ -18,7 +18,7 @@ $query = new WP_Query([
   <body  <?php body_class(); ?>>
     <!-- nav start -->
     <nav class="navbar navbar-fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerNav">
             <span class="icon-bar"></span>
