@@ -13,16 +13,14 @@ $query = new WP_Query([
   $GLOBALS['sectionType'] =  get_post_meta(get_the_ID(), 'class', true);
   switch ($GLOBALS['sectionType']) {
     case 'jumbotron':
-    get_template_part('template-parts/content', 'jumbotron');
-    break;
-    // end jumbotron
+      get_template_part('template-parts/content', 'jumbotron');
+    break; // end jumbotron
     case 'skills':
-    get_template_part('template-parts/content', 'skills');
-    break;
-    //end skills
+      get_template_part('template-parts/content', 'skills');
+    break; //end skills
     case 'reference':
-    get_template_part('template-parts/content', 'reference');
-    break;
+      get_template_part('template-parts/content', 'reference');
+    break; //end reference
     default:
     ?>
       <div class="container">

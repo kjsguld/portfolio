@@ -28,13 +28,19 @@ $query = new WP_Query([
         </div>
         <div class="collapse navbar-collapse navbar-right" id="headerNav">
           <ul class="nav navbar-nav">
-            <?php while ($query->have_posts()): $query->the_post();  ?>
+            <?php if (is_singular()): ?>
               <li>
-                <a href="#page-<?php the_ID(); ?>" >
-                  <?php the_title(); ?>
-                </a>
+                <a href="<?php echo site_url(); ?>">Kristian Guld</a>
               </li>
-            <?php endwhile; ?>
+            <?php else: ?>
+              <?php while ($query->have_posts()): $query->the_post();  ?>
+                <li>
+                  <a href="#page-<?php the_ID(); ?>" >
+                    <?php the_title(); ?>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+            <?php endif; ?>
             <?php pll_the_languages(); ?>
           </ul>
         </div>
