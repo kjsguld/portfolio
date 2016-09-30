@@ -22,7 +22,7 @@
       </div>
       <div class="row">
         <p class="text-center">
-          <?php the_author(); ?> &copy; <?php echo (date()<2015) ? '2015 - '.date('Y') : date('Y') ; ?>
+          <?php the_author(); ?> &copy; <?php echo (date('Y')<2015) ? '2015 - '.date('Y') : date('Y') ; ?>
         </p>
       </div>
     </div>

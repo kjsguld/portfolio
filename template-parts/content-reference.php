@@ -2,7 +2,7 @@
 //skill query
 $subQuery = new WP_Query([
   'post_type' => 'post',
-  'category_name' => 'reference',
+  'category_name' => 'reference_da',
   'order' => 'ASC'
 ]);
 ?>
