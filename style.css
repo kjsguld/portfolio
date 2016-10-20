@@ -21,6 +21,7 @@ h5,
 h6{
   font-family: Roboto, helvetica, sans-serif;
 }
+/* --- parallax --- */
 /* --- navbar --- */
 .navbar{
   background: -webkit-linear-gradient(rgba(204, 204, 204, 1), #eee);
@@ -57,6 +58,8 @@ h6{
   color: #eee;
   padding-top: 15vh;
   padding-bottom: 0;
+  /*position: fixed;
+  z-index: -1;*/
 }
 .jumbotron section{
   min-height: 1px;
@@ -217,5 +220,8 @@ footer a:hover{
   #site-wrapper>.container section.skills,
   #site-wrapper>.container section.reference{
     padding: 5em 2em;
+  }
+  body.single #site-wrapper>.container section{
+    min-height: 91vh;
   }
 }
